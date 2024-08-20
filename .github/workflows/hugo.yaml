@@ -9,12 +9,11 @@ on:
     - main
 
 jobs:
-  env:
-    HUGO_ENV: production
-    HUGO_ENVIRONMENT: production
-
   build:
     runs-on: ubuntu-latest
+    env:
+      HUGO_ENV: production
+      HUGO_ENVIRONMENT: production
     
     steps:
       - uses: actions/checkout@v4
